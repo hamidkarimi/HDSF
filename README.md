@@ -6,5 +6,8 @@ This is the implementation of  Learning Hierarchical Discourse-level Structure f
     sklearn
     numpy
     pandas
-    pickle
+    s
     gensim
+
+# intsrutions to run the project
+1. Please copy  ProjectFolder folder in an arbitrary location, say /home/XYZ/
