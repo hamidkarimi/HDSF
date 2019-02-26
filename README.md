@@ -6,7 +6,7 @@ This is the implementation of  Learning Hierarchical Discourse-level Structure f
     sklearn
     numpy
     pandas
-    s
+    pickle
     gensim
 
 # Intsrutions to run the project
