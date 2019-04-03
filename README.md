@@ -1,4 +1,4 @@
-# DHSF
+# HDSF
 This is the implementation of  Learning Hierarchical Discourse-level Structure for Fake News Detection paper 
 http://cse.msu.edu/~karimiha/publications/NAACL2019Discourse.pdf
 
