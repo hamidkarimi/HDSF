@@ -15,7 +15,7 @@ def path(p):
     return os.path.expanduser(p)
 
 
-parser = argparse.ArgumentParser(description='Arguments for DHSF Project')
+parser = argparse.ArgumentParser(description='Arguments for HDSF Project')
 
 parser.add_argument("--project_dir", type=str, required=False, default='/PATH/DHSF/', help="project directory")
 parser.add_argument("--dropout", type=float, required=False, default=0.0, help="Value of droupout")
