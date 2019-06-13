@@ -51,12 +51,12 @@ def get_leaves(node):
     return leaves
 
 
-def get_inorder(tree, X):
+def get_preorder(tree, X):
     X.append((tree.name))
     if len(tree.children) == 0:
         return
     for t in tree.children:
-        X.append(get_inorder(t, X))
+        X.append(get_preorder(t, X))
 
 
 ###################### Utility Functions  ################################################
@@ -172,23 +172,23 @@ def dependecy_tree_stat(dir):
     for index, (matrixp, rootp, label) in enumerate(zip(pijs, piroots, labels)):
         tree, child_parent_diff = construct_dependecy_tree(matrixp, rootp)
         X = []
-        get_inorder(tree, X)
+        get_preorder(tree, X)
         Y = []
         for ss in X:
             if ss is not None:
                 Y.append(int(ss))
-        inorder_diff = 0
+        preorder_diff = 0
         for i, n in enumerate(Y):
-            inorder_diff += np.abs(i + 1 - n)
+            preorder_diff += np.abs(i + 1 - n)
         leaves = get_leaves(tree)
         if label == 1:
             fake_doc_stat.append([label, len(matrixp), len(leaves) / (np.log10(len(matrixp))),
                                   child_parent_diff / (np.log10(len(matrixp))),
-                                  inorder_diff / (np.log10(len(matrixp)))])
+                                  preorder_diff / (np.log10(len(matrixp)))])
         else:
             real_doc_stat.append([label, len(matrixp), len(leaves) / (np.log10(len(matrixp))),
                                   child_parent_diff / (np.log10(len(matrixp))),
-                                  inorder_diff / (np.log10(len(matrixp)))])
+                                  preorder_diff / (np.log10(len(matrixp)))])
 
     fake_doc_stat = np.array(fake_doc_stat)
     real_doc_stat = np.array(real_doc_stat)
