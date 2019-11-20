@@ -22,3 +22,7 @@ http://cse.msu.edu/~karimiha/publications/NAACL2019Discourse.pdf
 If you are using this code please cite the following paper
 
 @inproceedings{karimi-tang-2019-learning, title = "Learning Hierarchical Discourse-level Structure for Fake News Detection", author = "Karimi, Hamid  and Tang, Jiliang", booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)", month = jun, year = "2019", address = "Minneapolis, Minnesota", publisher = "Association for Computational Linguistics", url = "https://www.aclweb.org/anthology/N19-1347", doi = "10.18653/v1/N19-1347",pages = "3432--3442"}
+
+# Webpage 
+To follow my work please follow my webpage 
+http://cse.msu.edu/~karimiha/
