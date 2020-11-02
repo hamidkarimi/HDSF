@@ -1,6 +1,6 @@
 # HDSF
 This is the implementation of  Learning Hierarchical Discourse-level Structure for Fake News Detection paper 
-http://cse.msu.edu/~karimiha/publications/NAACL2019Discourse.pdf
+http://cse.msu.edu/~karimiha/publications/fake_new_discourse2019.pdf
 
 # Required packages:
     pytorch
